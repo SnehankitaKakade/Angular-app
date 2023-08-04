@@ -1,0 +1,17 @@
+<!-- <p>data-binding-assignment works!</p> -->
+<div>
+    <ol> <br>
+        <li>
+           <span >Username :</span> <input type="text" placeholder="Please enter your username" [(ngModel)]="username">
+           <br><br>
+        </li>
+        <li>
+           <p> {{username}}</p>
+            <br><br>
+        </li>
+        <li>
+            <button type="submit"  (click)="remove()" [disabled]="!username" style="background-color:gray;font-weight: bolder;color:black;height:20px;">Submit</button>
+            <br>
+        </li>   
+    </ol>    
+</div>
